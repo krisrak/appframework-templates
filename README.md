@@ -3,13 +3,15 @@ HTML5 Mobile App UI templates
 
 Below are basic HTML5 mobile app templates created using [Intel App Framework] (https://github.com/01org/appframework), which is a free and open source Javascript framework targeted at HTML5 Mobile browsers with a blazingly fast query selector library and Mobile UI framework for creating app with native like UI and performance.
 
-You can use Intel AppFramework to create __mobile web apps__ or create __hybrid apps__ using tools like _Intel XDK_ or _Adobe Phonegap build_ to build native packaged apps.
+You can use Intel AppFramework to create __mobile web apps__ or create __hybrid apps__ using tools like [_Intel XDK_](http://xdk-software.intel.com/) or _Adobe Phonegap build_ to build native packaged apps.
 
-AppFramework has UI themes with look and feel similar to _iOS_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices.
+AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices. Notice the screentshots below, the app code is same but the look and feel changes to match the device's native style.
 
 __Below are six basic templates to get you started with your mobile app:__
 
-_(These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view)_
+These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
+
+_Feel free to send pull-requests for any bugs or enhancements for these templates_
 
 SingleView App
 -
@@ -59,6 +61,8 @@ This template can be used for simple tab view application that has tabs at the b
 
 ![TabViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/TabViewApp.png)
 
+_(UI theme - Same code on Android vs Windows Phone)_
+
 =
 
-_Screenshots from Intel XDK - HTML5 Development Tool which helps you to code, design, test, debug and build hybrid apps for iOS, Android, Windows Phone, Tizen and more. [more information on Intel XDK](http://xdk-software.intel.com/)_
+_Screenshots from Intel XDK - HTML5 Development Tool which helps you to_ ___design, code, simulate, test, debug and build___ _hybrid apps for iPhone, iPad, Android, Windows Phone, Tizen and more devices. [more information on Intel XDK](http://xdk-software.intel.com/)_
