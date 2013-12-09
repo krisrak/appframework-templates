@@ -9,6 +9,8 @@ AppFramework has UI themes with look and feel similar to _iOS_, _Android_, _Wind
 
 __Below are six basic templates to get you started with your mobile app:__
 
+_(These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view)_
+
 SingleView App
 -
 This template can be used for simple application that has just one view, for creating applications similar to Flash light app or Calculator app. 
@@ -19,7 +21,7 @@ FlipView App
 -
 This template can be used for simple utility application that has a main view and a settings view, for creating applications similar to Maps app, Weather App or Clock app. 
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/index-SingleViewApp.html)
+[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/index-FlipViewApp.html)
 
 ListView App
 -
