@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Single View App template</title>
+<!--
+    This template can be used for simple application that has just a main view, for applications like Flash light app or Calculator app.
+-->    
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+ 
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;        
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        <div class="panel" title="Title" id="page1"  data-footer="none" selected="true">
+            <p>This is a Single View App template</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>    

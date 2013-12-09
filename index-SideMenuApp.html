@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Side Menu App template</title>
+<!--
+    This template can be used for simple app with side menu that can be opened to switch views, for applications like Youtube App or Gmail app.
+-->  
+    
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    <!--AppFramework plugin for sliding side menu-->
+    <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.animateHeaders = false;
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    
+    <!--side menu Navigation bar -->
+    <nav>
+        <ul class="list">
+            <li><a href="#page1" class="icon home">Home</a></li>
+            <li><a href="#page2" class="icon heart">Favorites</a></li>
+            <li><a href="#page3" class="icon chat">Messages</a></li>
+            <li><a href="#page4" class="icon user">Profile</a></li>
+        </ul>
+    </nav>
+    
+    <div id="content" style=""> 
+        
+    <!--Tab View Pages-->
+        <div class="panel" title="Home" id="page1" data-footer="none" selected="true">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Home</h1>
+            </header>
+            <p>This is view for first menu item</p>
+        </div>
+        
+        <div class="panel" title="Favorites" id="page2" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Favorites</h1>
+            </header>
+            <p>This is view for second menu item</p>
+        </div>
+        
+        <div class="panel" title="Messages" id="page3" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Messages</h1>
+            </header>
+            <p>This is view for third menu item</p>
+        </div>
+        
+        <div class="panel" title="Profile" id="page4" data-footer="none">
+            <header>
+                <a id="menubadge" onclick='$.ui.toggleSideMenu()' class='menuButton' style="float:left !important"></a>
+                <h1>Profile</h1>
+            </header>
+            <p>This is view for fourth menu item</p>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    

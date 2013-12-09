@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List View App template</title>
+<!--
+    This template can be used for simple list view application that has a main view with list and detail view for each list item, for applications like Mail app, Messages App or Twitter app.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.backButtonText = "Back";
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+       
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--List View Page-->
+        <div class="panel" title="Title" id="listview" data-footer="none" selected="true">
+            <ul class="list">
+                <li><a href="#item1">Item 1</a></li>
+                <li><a href="#item2">Item 2</a></li>
+                <li><a href="#item3">Item 3</a></li>
+                <li><a href="#item4">Item 4</a></li>
+                <li><a href="#item5">Item 5</a></li>
+                <li><a href="#item6">Item 6</a></li>
+                <li><a href="#item7">Item 7</a></li>
+                <li><a href="#item8">Item 8</a></li>
+                <li><a href="#item9">Item 9</a></li>
+                <li><a href="#item10">Item 10</a></li>
+                <li><a href="#item11">Item 11</a></li>
+                <li><a href="#item12">Item 12</a></li>
+            </ul>
+        </div>
+        
+    <!--Detail View Pages for each list items-->
+        <div class="panel" title="Item 1" id="item1" data-footer="none">
+            <p>This is detail view for Item 1</p>
+        </div>
+        
+        <div class="panel" title="Item 2" id="item2" data-footer="none">
+            <p>This is detail view for Item 2</p>
+        </div>
+        
+        <div class="panel" title="Item 3" id="item3" data-footer="none">
+            <p>This is detail view for Item 3</p>
+        </div>
+        
+        <div class="panel" title="Item 4" id="item4" data-footer="none">
+            <p>This is detail view for Item 4</p>
+        </div>
+        
+        <div class="panel" title="Item 5" id="item5" data-footer="none">
+            <p>This is detail view for Item 5</p>
+        </div>
+        
+        <div class="panel" title="Item 6" id="item6" data-footer="none">
+            <p>This is detail view for Item 6</p>
+        </div>
+        
+        <div class="panel" title="Item 7" id="item7" data-footer="none">
+            <p>This is detail view for Item 7</p>
+        </div>
+        
+        <div class="panel" title="Item 8" id="item8" data-footer="none">
+            <p>This is detail view for Item 8</p>
+        </div>
+        
+        <div class="panel" title="Item 9" id="item9" data-footer="none">
+            <p>This is detail view for Item 9</p>
+        </div>
+        
+        <div class="panel" title="Item 10" id="item10" data-footer="none">
+            <p>This is detail view for Item 10</p>
+        </div>
+        
+        <div class="panel" title="Item 11" id="item11" data-footer="none">
+            <p>This is detail view for Item 11</p>
+        </div>
+        
+        <div class="panel" title="Item 12" id="item1" data-footer="none">
+            <p>This is detail view for Item 12</p>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    

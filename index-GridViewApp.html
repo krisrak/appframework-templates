@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid View App template</title>
+<!--
+    This template can be used for photo app with grid view that will open detail view, for applications like Photo App or Instagram app.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.backButtonText = "Back";
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+.grid {text-align:center;padding:10px 0}        
+.grid-block {display:inline-block;border:1px solid #888; width:90px;height:90px;margin:4px 2px;padding:3px;background-color:rgba(128,128,128,0.2)}
+.grid-img {}        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--List View Page-->
+        <div class="panel" title="Title" id="listview" selected="true">
+            <header>
+                <h1>Title</h1>
+                <a href="#" class="button icon refresh" style="float:right"></a>
+            </header>
+            <div class="grid">
+                <a href="#item1"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item2"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item3"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item4"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item5"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item6"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item7"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item8"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item9"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item10"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item11"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item12"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item13"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item14"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+                <a href="#item15"><div class="grid-block"><img class="grid-img" src="" /></div></a>
+            </div>
+            <p style="text-align:center">Load More</p>
+        </div>
+        
+    <!--Detail View Pages for each list items-->
+        <div class="panel" title="Item 1" id="item1">
+            <p>This is detail view for Item 1</p>
+        </div>
+        
+        <div class="panel" title="Item 2" id="item2">
+            <p>This is detail view for Item 2</p>
+        </div>
+        
+        <div class="panel" title="Item 3" id="item3">
+            <p>This is detail view for Item 3</p>
+        </div>
+        
+        <div class="panel" title="Item 4" id="item4">
+            <p>This is detail view for Item 4</p>
+        </div>
+        
+        <div class="panel" title="Item 5" id="item5">
+            <p>This is detail view for Item 5</p>
+        </div>
+        
+        <div class="panel" title="Item 6" id="item6">
+            <p>This is detail view for Item 6</p>
+        </div>
+        
+        <div class="panel" title="Item 7" id="item7">
+            <p>This is detail view for Item 7</p>
+        </div>
+        
+        <div class="panel" title="Item 8" id="item8">
+            <p>This is detail view for Item 8</p>
+        </div>
+        
+        <div class="panel" title="Item 9" id="item9">
+            <p>This is detail view for Item 9</p>
+        </div>
+        
+        <div class="panel" title="Item 10" id="item10">
+            <p>This is detail view for Item 10</p>
+        </div>
+        
+        <div class="panel" title="Item 11" id="item11">
+            <p>This is detail view for Item 11</p>
+        </div>
+        
+        <div class="panel" title="Item 12" id="item1">
+            <p>This is detail view for Item 12</p>
+        </div>
+        
+        <div class="panel" title="Item 13" id="item13">
+            <p>This is detail view for Item 13</p>
+        </div>
+        
+        <div class="panel" title="Item 14" id="item14">
+            <p>This is detail view for Item 14</p>
+        </div>
+        
+        <div class="panel" title="Item 15" id="item15">
+            <p>This is detail view for Item 15</p>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab View App template</title>
+<!--
+    This template can be used for simple tab view application that has tabs at the bottom to switch views, for applications like Phone app, Facebook App or Instagram app.
+--> 
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.animateHeaders = false;
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    
+    <div id="content" style=""> 
+        
+    <!--Tab View Pages-->
+        <div class="panel" title="Home" id="page1" data-tab="tab1" selected="true">
+            <header>
+                <h1>Home</h1>
+            </header>
+            <p>This is view for first Tab</p>
+        </div>
+        
+        <div class="panel" title="Favorites" id="page2" data-tab="tab2">
+            <header>
+                <h1>Favorites</h1>
+            </header>
+            <p>This is view for second Tab</p>
+        </div>
+        
+        <div class="panel" title="Messages" id="page3" data-tab="tab3">
+            <header>
+                <h1>Messages</h1>
+            </header>
+            <p>This is view for third Tab</p>
+        </div>
+        
+        <div class="panel" title="Profile" id="page4" data-tab="tab4">
+            <header>
+                <h1>Profile</h1>
+            </header>
+            <p>This is view for fourth Tab</p>
+        </div>
+        
+    </div>
+    
+    <!--Footer with Tabs or Navigation bar -->
+    <div id="navbar">
+        <a href="#page1" id='tab1' class="icon home" data-transition="none">Home</a>
+        <a href="#page2" id='tab2' class="icon heart" data-transition="none">Favorites</a>
+        <a href="#page3" id='tab3' class="icon chat" data-transition="none">Messages</a>
+        <a href="#page4" id='tab4' class="icon user" data-transition="none">Profile</a>
+    </div>
+
+</div>
+</body>
+</html>    
