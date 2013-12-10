@@ -72,7 +72,7 @@ Photo App (GridViewApp template)
 -
 This sample app is created from GridViewApp template and uses photo data from Instagram API to show photos in grid and larger photo when clicked on it. (In this sample, API data from Instagram is saved locally and then used for demo)
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-GridViewApp-Photo.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photo.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-GridViewApp-Photos.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photos.html)
 
 ![Photo App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/GridViewApp-Photo.png)
 
