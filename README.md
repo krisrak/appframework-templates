@@ -17,7 +17,7 @@ SingleView App
 -
 This template can be used for simple application that has just one view, for creating applications similar to Flash light app or Calculator app. 
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SingleViewApp.html)
 
 ![SingleViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SingleViewApp.png)
 
@@ -25,7 +25,7 @@ FlipView App
 -
 This template can be used for simple utility application that has a main view and a settings view, for creating applications similar to Maps app, Weather App or Clock app. 
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-FlipViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-FlipViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-FlipViewApp.html)
 
 ![FlipViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/FlipViewApp.png)
 
@@ -33,7 +33,7 @@ ListView App
 -
 This template can be used for simple list view application that has a main view with scrollable list and detail view for each list item, this can be used for creating applications similar to Mail app, Messages App or Twitter app.
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp.html)
 
 ![ListViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp.png)
 
@@ -41,7 +41,7 @@ GridView App
 -
 This template can be used for photo app with grid view that will open detail view, for creating applications similar to Photo App or Instagram app.
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-GridViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-GridViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-GridViewApp.html)
 
 ![GridViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/GridViewApp.png)
 
@@ -49,7 +49,7 @@ SideMenu App
 -
 This template can be used for simple app with side menu that can be opened to switch views, for creating applications similar to Youtube App or Gmail app.
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp.html)
 
 ![SideMenuApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SideMenuApp.png)
 
@@ -57,7 +57,7 @@ TabView App
 -
 This template can be used for simple tab view application that has tabs at the bottom to switch views, for creating applications similar to Phone app, Facebook App or Instagram app.
 
-[__&rarr; Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-TabViewApp.html)
 
 ![TabViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/TabViewApp.png)
 
