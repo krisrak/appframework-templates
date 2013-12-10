@@ -77,7 +77,7 @@ Below are examples of apps created using the above templates, the sample apps sh
 
 Photo App (GridViewApp template)
 -
-This sample app is created from GridViewApp template and uses photo data from Instagram API to show photos in grid and larger photo when clicked on it. (In this sample, API data from Instagram is saved locally and then used for demo)
+This sample app is created from GridViewApp template and uses photo data from Instagram API to show photos in grid and larger photo when clicked on it. This sample gets data from API* and dynamically creates grids and uses `$.ui.addContentDiv()` to dynamically add panels with content from API. _(In this sample, API data from Instagram is saved locally and then used for demo)_
 
 &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photos.html)
 
@@ -93,7 +93,7 @@ This sample app is created from FlipViewApp template and uses Google Maps API to
 
 Movies App (ListViewApp template)
 -
-This sample app is created from ListViewApp template and uses Flixter API data to show list of top movies and shows movie details when selected. (In this sample, API data from Flixter is saved locally and then used for demo)
+This sample app is created from ListViewApp template and uses Flixter API data to show list of top movies and shows movie details when selected. This sample gets data from API* and dynamically creates list items and uses `$.ui.addContentDiv()` to dynamically add panels with content from API. _(In this sample, API data from Flixter is saved locally and then used for demo)_
 
 &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-ListViewApp-Movies.html)
 
