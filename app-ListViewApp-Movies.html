@@ -28,11 +28,14 @@ function onDeviceReady(){
 $(document).ready(function(){
     document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
     $.ui.launch();
-    getData();
 });
         
-function getData() {
-    $.getJSON("data/flixter-1.json", function(data){
+$.ui.ready(function(){
+    getData("data/flixter-1.json");
+});
+        
+function getData(url) {
+    $.getJSON(url, function(data){
         var list_html = "";
         for(var i=0; i< data.movies.length; i++){
             var id = data.movies[i].id;

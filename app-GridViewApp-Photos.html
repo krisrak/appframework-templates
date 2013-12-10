@@ -28,8 +28,11 @@ function onDeviceReady(){
 $(document).ready(function(){
     document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
     $.ui.launch();
-    getPhotos("data/instagram-1.json");
 });
+        
+$.ui.ready(function(){
+    getPhotos("data/instagram-1.json");
+});        
         
 function getPhotos(url){
     var grid_html = "";
