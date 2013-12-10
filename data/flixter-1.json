@@ -1,0 +1,724 @@
+{
+    "movies": [
+        {
+            "id": "770678819",
+            "title": "Man of Steel",
+            "year": 2013,
+            "mpaa_rating": "PG-13",
+            "runtime": 143,
+            "critics_consensus": "Man of Steel provides exhilarating action and spectacle to overcome its detours into generic blockbuster territory.",
+            "release_dates": {
+                "theater": "2013-06-14",
+                "dvd": "2013-11-12"
+            },
+            "ratings": {
+                "critics_rating": "Rotten",
+                "critics_score": 56,
+                "audience_rating": "Upright",
+                "audience_score": 77
+            },
+            "synopsis": "A young boy learns that he has extraordinary powers and is not of this Earth. As a young man, he journeys to discover where he came from and what he was sent here to do. But the hero in him must emerge if he is to save the world from annihilation and become the symbol of hope for all mankind. -- (C) Warner Bros",
+            "posters": {
+                "thumbnail": "http://content9.flixster.com/movie/11/17/42/11174287_mob.jpg",
+                "profile": "http://content9.flixster.com/movie/11/17/42/11174287_pro.jpg",
+                "detailed": "http://content9.flixster.com/movie/11/17/42/11174287_det.jpg",
+                "original": "http://content9.flixster.com/movie/11/17/42/11174287_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Henry Cavill",
+                    "id": "341817917",
+                    "characters": [
+                        "Clark Kent/Kal-El"
+                    ]
+                },
+                {
+                    "name": "Amy Adams",
+                    "id": "162653029",
+                    "characters": [
+                        "Lois Lane"
+                    ]
+                },
+                {
+                    "name": "Michael Shannon",
+                    "id": "368451324",
+                    "characters": [
+                        "General Zod"
+                    ]
+                },
+                {
+                    "name": "Diane Lane",
+                    "id": "162652926",
+                    "characters": [
+                        "Martha Kent"
+                    ]
+                },
+                {
+                    "name": "Russell Crowe",
+                    "id": "162652569",
+                    "characters": [
+                        "Jor-El"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "0770828"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/770678819.json",
+                "alternate": "http://www.rottentomatoes.com/m/superman_man_of_steel/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/770678819/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/770678819/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/770678819/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/770678819/similar.json"
+            }
+        },
+        {
+            "id": "771246668",
+            "title": "Fast & Furious 6",
+            "year": 2013,
+            "mpaa_rating": "PG-13",
+            "runtime": 130,
+            "critics_consensus": "With high-octane humor and terrific action scenes, Fast & Furious 6 builds upon the winning blockbuster formula that made Fast 5 a critical and commercial success.",
+            "release_dates": {
+                "theater": "2013-05-24",
+                "dvd": "2013-12-10"
+            },
+            "ratings": {
+                "critics_rating": "Certified Fresh",
+                "critics_score": 70,
+                "audience_rating": "Upright",
+                "audience_score": 84
+            },
+            "synopsis": "Vin Diesel, Paul Walker and Dwayne Johnson lead the returning cast of all-stars as the global blockbuster franchise built on speed races to its next continent in Fast & Furious 6. Reuniting for their most high-stakes adventure yet, fan favorites Jordana Brewster, Michelle Rodriguez, Tyrese Gibson, Sung Kang, Gal Gadot, Chris \"Ludacris\" Bridges and Elsa Pataky are joined by badass series newcomers Luke Evans and Gina Carano. Since Dom (Diesel) and Brian's (Walker) Rio heist toppled a kingpin's empire and left their crew with $100 million, our heroes have scattered across the globe. But their inability to return home and living forever on the lam have left their lives incomplete. Meanwhile, Hobbs (Johnson) has been tracking an organization of lethally skilled mercenary drivers across 12 countries, whose mastermind (Evans) is aided by a ruthless second-in-command revealed to be the love Dom thought was dead, Letty (Rodriguez). The only way to stop the criminal outfit is to outmatch them at street level, so Hobbs asks Dom to assemble his elite team in London. Payment? Full pardons for all of them so they can return home and make their families whole again. Building on the worldwide blockbuster success of Fast Five and taking the action, stunts and narrative to even greater heights, Fast & Furious 6 sees director Justin Lin back behind the camera for the fourth time. He is supported by longtime producers Neal H. Moritz and Vin Diesel, who welcome producer Clayton Townsend back to the series. (c) Fox",
+            "posters": {
+                "thumbnail": "http://content7.flixster.com/movie/11/17/33/11173373_mob.jpg",
+                "profile": "http://content7.flixster.com/movie/11/17/33/11173373_pro.jpg",
+                "detailed": "http://content7.flixster.com/movie/11/17/33/11173373_det.jpg",
+                "original": "http://content7.flixster.com/movie/11/17/33/11173373_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Vin Diesel",
+                    "id": "162652472",
+                    "characters": [
+                        "Dominic Toretto"
+                    ]
+                },
+                {
+                    "name": "Paul Walker",
+                    "id": "162654234",
+                    "characters": [
+                        "Brian O'Conner"
+                    ]
+                },
+                {
+                    "name": "Dwayne \"The Rock\" Johnson",
+                    "id": "770893686",
+                    "characters": [
+                        "Hobbs"
+                    ]
+                },
+                {
+                    "name": "Jordana Brewster",
+                    "id": "162662313",
+                    "characters": [
+                        "Mia"
+                    ]
+                },
+                {
+                    "name": "Michelle Rodriguez",
+                    "id": "162668831",
+                    "characters": [
+                        "Letty"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1905041"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771246668.json",
+                "alternate": "http://www.rottentomatoes.com/m/fast_and_furious_6/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771246668/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771246668/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771246668/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771246668/similar.json"
+            }
+        },
+        {
+            "id": "771238418",
+            "title": "Monsters University",
+            "year": 2013,
+            "mpaa_rating": "G",
+            "runtime": 95,
+            "critics_consensus": "It doesn't scale the heights of Pixar's finest efforts, but Monsters University is still funny and thoughtful family entertainment for viewers of any age.",
+            "release_dates": {
+                "theater": "2013-06-21",
+                "dvd": "2013-10-29"
+            },
+            "ratings": {
+                "critics_rating": "Certified Fresh",
+                "critics_score": 78,
+                "audience_rating": "Upright",
+                "audience_score": 83
+            },
+            "synopsis": "Mike Wazowski and James P. Sullivan are an inseparable pair, but that wasn't always the case. From the moment these two mismatched monsters met they couldn't stand each other. \"Monsters University\" unlocks the door to how Mike and Sulley overcame their differences and became the best of friends. -- (C) Walt Disney",
+            "posters": {
+                "thumbnail": "http://content6.flixster.com/movie/11/16/99/11169964_mob.jpg",
+                "profile": "http://content6.flixster.com/movie/11/16/99/11169964_pro.jpg",
+                "detailed": "http://content6.flixster.com/movie/11/16/99/11169964_det.jpg",
+                "original": "http://content6.flixster.com/movie/11/16/99/11169964_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Billy Crystal",
+                    "id": "162655707",
+                    "characters": [
+                        "Mike"
+                    ]
+                },
+                {
+                    "name": "John Goodman",
+                    "id": "162655706",
+                    "characters": [
+                        "Sullivan"
+                    ]
+                },
+                {
+                    "name": "Steve Buscemi",
+                    "id": "162652875",
+                    "characters": [
+                        "Randy"
+                    ]
+                },
+                {
+                    "name": "Helen Mirren",
+                    "id": "162662871",
+                    "characters": [
+                        "Dean Hardscrabble"
+                    ]
+                },
+                {
+                    "name": "Peter Sohn",
+                    "id": "770673194",
+                    "characters": [
+                        "Squishy"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1453405"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771238418.json",
+                "alternate": "http://www.rottentomatoes.com/m/monsters_university/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771238418/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771238418/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771238418/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771238418/similar.json"
+            }
+        },
+        {
+            "id": "771245727",
+            "title": "Despicable Me 2",
+            "year": 2013,
+            "mpaa_rating": "PG",
+            "runtime": 98,
+            "critics_consensus": "Despicable Me 2 offers plenty of eye-popping visual inventiveness and a number of big laughs.",
+            "release_dates": {
+                "theater": "2013-07-03",
+                "dvd": "2013-12-10"
+            },
+            "ratings": {
+                "critics_rating": "Certified Fresh",
+                "critics_score": 75,
+                "audience_rating": "Upright",
+                "audience_score": 85
+            },
+            "synopsis": "Universal Pictures and Illumination Entertainment's worldwide blockbuster Despicable Me entertained audiences around the globe in 2010, grossing more than $540 million and becoming the 10th-biggest animated motion picture in U.S. history. In summer 2013, get ready for more Minion madness in Despicable Me 2. (c) Universal",
+            "posters": {
+                "thumbnail": "http://content8.flixster.com/movie/11/17/21/11172174_mob.jpg",
+                "profile": "http://content8.flixster.com/movie/11/17/21/11172174_pro.jpg",
+                "detailed": "http://content8.flixster.com/movie/11/17/21/11172174_det.jpg",
+                "original": "http://content8.flixster.com/movie/11/17/21/11172174_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Steve Carell",
+                    "id": "162652665",
+                    "characters": [
+                        "Gru"
+                    ]
+                },
+                {
+                    "name": "Kristen Wiig",
+                    "id": "770670481",
+                    "characters": [
+                        "Lucy"
+                    ]
+                },
+                {
+                    "name": "Benjamin Bratt",
+                    "id": "162653200",
+                    "characters": [
+                        "Eduardo/El Macho"
+                    ]
+                },
+                {
+                    "name": "Miranda Cosgrove",
+                    "id": "404566882",
+                    "characters": [
+                        "Margo"
+                    ]
+                },
+                {
+                    "name": "Russell Brand",
+                    "id": "770683602",
+                    "characters": [
+                        "Dr. Nefario"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1690953"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771245727.json",
+                "alternate": "http://www.rottentomatoes.com/m/despicable_me_2/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771245727/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771245727/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771245727/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771245727/similar.json"
+            }
+        },
+        {
+            "id": "771193517",
+            "title": "The Wolverine",
+            "year": 2013,
+            "mpaa_rating": "PG-13",
+            "runtime": 136,
+            "critics_consensus": "Although its final act succumbs to the usual cartoonish antics, The Wolverine is one superhero movie that manages to stay true to the comics while keeping casual viewers entertained.",
+            "release_dates": {
+                "theater": "2013-07-25",
+                "dvd": "2013-12-03"
+            },
+            "ratings": {
+                "critics_rating": "Fresh",
+                "critics_score": 69,
+                "audience_rating": "Upright",
+                "audience_score": 72
+            },
+            "synopsis": "Hugh Jackman returns as Wolverine in this sequel to the member of the X-Men's first solo outing. Mark Bomback and The Usual Suspects' Christopher McQuarrie penned the script, which takes its inspiration from the Chris Claremont/Frank Miller Marvel miniseries from the 1980s dealing with the character's adventures in Japan as he fights ninjas in the ceremonial garb of the samurai. Knight and Day's James Mangold directs. ~ Jeremy Wheeler, Rovi",
+            "posters": {
+                "thumbnail": "http://content7.flixster.com/movie/11/17/48/11174821_mob.jpg",
+                "profile": "http://content7.flixster.com/movie/11/17/48/11174821_pro.jpg",
+                "detailed": "http://content7.flixster.com/movie/11/17/48/11174821_det.jpg",
+                "original": "http://content7.flixster.com/movie/11/17/48/11174821_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Hugh Jackman",
+                    "id": "162661503",
+                    "characters": [
+                        "Logan"
+                    ]
+                },
+                {
+                    "name": "Tao Okamoto",
+                    "id": "771414513",
+                    "characters": [
+                        "Mariko"
+                    ]
+                },
+                {
+                    "name": "Rila Fukushima",
+                    "id": "771414514",
+                    "characters": [
+                        "Yukio"
+                    ]
+                },
+                {
+                    "name": "Hiroyuki Sanada",
+                    "id": "162729305",
+                    "characters": [
+                        "Shingen"
+                    ]
+                },
+                {
+                    "name": "Svetlana Khodchenkova",
+                    "id": "770824734",
+                    "characters": [
+                        "Viper"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1430132"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771193517.json",
+                "alternate": "http://www.rottentomatoes.com/m/the_wolverine_2012/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771193517/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771193517/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771193517/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771193517/similar.json"
+            }
+        },
+        {
+            "id": "771267074",
+            "title": "Grown Ups 2",
+            "year": 2013,
+            "mpaa_rating": "PG-13",
+            "runtime": 101,
+            "critics_consensus": "While it's almost certainly the movie event of the year for filmgoers passionate about deer urine humor, Grown Ups 2 will bore, annoy, and disgust audiences of nearly every other persuasion.",
+            "release_dates": {
+                "theater": "2013-07-12",
+                "dvd": "2013-11-05"
+            },
+            "ratings": {
+                "critics_rating": "Rotten",
+                "critics_score": 7,
+                "audience_rating": "Spilled",
+                "audience_score": 56
+            },
+            "synopsis": "The all-star comedy cast from Grown Ups returns (with some exciting new additions) for more summertime laughs. Lenny (Adam Sandler) has relocated his family back to the small town where he and his friends grew up. This time around, the grown ups are the ones learning lessons from their kids on a day notoriously full of surprises: the last day of school. (c) Sony",
+            "posters": {
+                "thumbnail": "http://content6.flixster.com/movie/11/17/44/11174456_mob.jpg",
+                "profile": "http://content6.flixster.com/movie/11/17/44/11174456_pro.jpg",
+                "detailed": "http://content6.flixster.com/movie/11/17/44/11174456_det.jpg",
+                "original": "http://content6.flixster.com/movie/11/17/44/11174456_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Adam Sandler",
+                    "id": "162652550",
+                    "characters": [
+                        "Lenny Feder"
+                    ]
+                },
+                {
+                    "name": "Kevin James",
+                    "id": "326298578",
+                    "characters": [
+                        "Eric Lamonsoff"
+                    ]
+                },
+                {
+                    "name": "Chris Rock",
+                    "id": "162652551",
+                    "characters": [
+                        "Kurt McKenzie"
+                    ]
+                },
+                {
+                    "name": "David Spade",
+                    "id": "162656213",
+                    "characters": [
+                        "Marcus Higgins"
+                    ]
+                },
+                {
+                    "name": "Salma Hayek Pinault",
+                    "id": "771078978",
+                    "characters": [
+                        "Roxanne Chase-Feder"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "2191701"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771267074.json",
+                "alternate": "http://www.rottentomatoes.com/m/grown_ups_2/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771267074/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771267074/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771267074/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771267074/similar.json"
+            }
+        },
+        {
+            "id": "771308691",
+            "title": "The Heat",
+            "year": 2013,
+            "mpaa_rating": "R",
+            "runtime": 116,
+            "critics_consensus": "The Heat is predictable, but Melissa McCarthy is reliably funny and Sandra Bullock proves a capable foil.",
+            "release_dates": {
+                "theater": "2013-06-28",
+                "dvd": "2013-10-15"
+            },
+            "ratings": {
+                "critics_rating": "Fresh",
+                "critics_score": 66,
+                "audience_rating": "Upright",
+                "audience_score": 74
+            },
+            "synopsis": "Uptight FBI Special Agent Sarah Ashburn (Sandra Bullock) and foul-mouthed Boston cop Shannon Mullins (Melissa McCarthy) couldn't be more incompatible. But when they join forces to bring down a ruthless drug lord, they become the last thing anyone expected: buddies. From Paul Feig, director of \"Bridesmaids.\" (c) Fox",
+            "posters": {
+                "thumbnail": "http://content6.flixster.com/movie/11/17/38/11173848_mob.jpg",
+                "profile": "http://content6.flixster.com/movie/11/17/38/11173848_pro.jpg",
+                "detailed": "http://content6.flixster.com/movie/11/17/38/11173848_det.jpg",
+                "original": "http://content6.flixster.com/movie/11/17/38/11173848_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Sandra Bullock",
+                    "id": "162652205"
+                },
+                {
+                    "name": "Melissa McCarthy",
+                    "id": "528361348"
+                },
+                {
+                    "name": "Kaitlin Olson",
+                    "id": "770781052"
+                },
+                {
+                    "name": "Taran Killam",
+                    "id": "395113361"
+                },
+                {
+                    "name": "Raw Leiba",
+                    "id": "771412530"
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "2404463"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771308691.json",
+                "alternate": "http://www.rottentomatoes.com/m/the_heat/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771308691/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771308691/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771308691/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771308691/similar.json"
+            }
+        },
+        {
+            "id": "771235120",
+            "title": "Pacific Rim",
+            "year": 2013,
+            "mpaa_rating": "PG-13",
+            "runtime": 131,
+            "critics_consensus": "It may sport more style than substance, but Pacific Rim is a solid modern creature feature bolstered by fantastical imagery and an irresistible sense of fun.",
+            "release_dates": {
+                "theater": "2013-07-12",
+                "dvd": "2013-10-15"
+            },
+            "ratings": {
+                "critics_rating": "Fresh",
+                "critics_score": 72,
+                "audience_rating": "Upright",
+                "audience_score": 79
+            },
+            "synopsis": "When legions of monstrous creatures, known as Kaiju, started rising from the sea, a war began that would take millions of lives and consume humanity's resources for years on end. To combat the giant Kaiju, a special type of weapon was devised: massive robots, called Jaegers, which are controlled simultaneously by two pilots whose minds are locked in a neural bridge. But even the Jaegers are proving nearly defenseless in the face of the relentless Kaiju. On the verge of defeat, the forces defending mankind have no choice but to turn to two unlikely heroes-a washed up former pilot (Charlie Hunnam) and an untested trainee (Rinko Kikuchi)-who are teamed to drive a legendary but seemingly obsolete Jaeger from the past. Together, they stand as mankind's last hope against the mounting apocalypse. (c) Warner Bros",
+            "posters": {
+                "thumbnail": "http://content7.flixster.com/movie/11/17/39/11173933_mob.jpg",
+                "profile": "http://content7.flixster.com/movie/11/17/39/11173933_pro.jpg",
+                "detailed": "http://content7.flixster.com/movie/11/17/39/11173933_det.jpg",
+                "original": "http://content7.flixster.com/movie/11/17/39/11173933_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Charlie Hunnam",
+                    "id": "162653833",
+                    "characters": [
+                        "Raleigh Becket"
+                    ]
+                },
+                {
+                    "name": "Diego Klattenhoff",
+                    "id": "770752941",
+                    "characters": [
+                        "Yancy Becket"
+                    ]
+                },
+                {
+                    "name": "Idris Elba",
+                    "id": "162654425",
+                    "characters": [
+                        "Stacker Pentecost"
+                    ]
+                },
+                {
+                    "name": "Rinko Kikuchi",
+                    "id": "545585891",
+                    "characters": [
+                        "Mako Mori"
+                    ]
+                },
+                {
+                    "name": "Charlie Day",
+                    "id": "770729280",
+                    "characters": [
+                        "Dr. Newton Geiszler"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1663662"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771235120.json",
+                "alternate": "http://www.rottentomatoes.com/m/pacific_rim_2013/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771235120/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771235120/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771235120/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771235120/similar.json"
+            }
+        },
+        {
+            "id": "771312656",
+            "title": "The Conjuring",
+            "year": 2013,
+            "mpaa_rating": "R",
+            "runtime": 112,
+            "critics_consensus": "Well-crafted and gleefully creepy, The Conjuring ratchets up dread through a series of effective old-school scares.",
+            "release_dates": {
+                "theater": "2013-07-19",
+                "dvd": "2013-10-22"
+            },
+            "ratings": {
+                "critics_rating": "Certified Fresh",
+                "critics_score": 87,
+                "audience_rating": "Upright",
+                "audience_score": 83
+            },
+            "synopsis": "Before there was Amityville, there was Harrisville. \"The Conjuring\" tells the true story of Ed and Lorraine Warren (Patrick Wilson, Vera Farmiga), world renowned paranormal investigators, who were called to help a family terrorized by a dark presence in a secluded farmhouse. Forced to confront a powerful demonic entity, the Warrens find themselves caught in the most horrifying case of their lives. -- (C) WB",
+            "posters": {
+                "thumbnail": "http://content7.flixster.com/movie/11/17/39/11173945_mob.jpg",
+                "profile": "http://content7.flixster.com/movie/11/17/39/11173945_pro.jpg",
+                "detailed": "http://content7.flixster.com/movie/11/17/39/11173945_det.jpg",
+                "original": "http://content7.flixster.com/movie/11/17/39/11173945_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Vera Farmiga",
+                    "id": "162655572",
+                    "characters": [
+                        "Lorraine Warren"
+                    ]
+                },
+                {
+                    "name": "Patrick Wilson",
+                    "id": "162659104",
+                    "characters": [
+                        "Ed Warren"
+                    ]
+                },
+                {
+                    "name": "Ron Livingston",
+                    "id": "162653278",
+                    "characters": [
+                        "Roger Perron"
+                    ]
+                },
+                {
+                    "name": "Lili Taylor",
+                    "id": "162668140",
+                    "characters": [
+                        "Carolyn Perron"
+                    ]
+                },
+                {
+                    "name": "Shanley Caswell",
+                    "id": "771098206",
+                    "characters": [
+                        "Andrea"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1457767"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771312656.json",
+                "alternate": "http://www.rottentomatoes.com/m/the_conjuring/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771312656/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771312656/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771312656/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771312656/similar.json"
+            }
+        },
+        {
+            "id": "771318592",
+            "title": "We're The Millers",
+            "year": 2013,
+            "mpaa_rating": "R",
+            "runtime": 110,
+            "critics_consensus": "We're the Millers squanders its potential with an uneven, lazily assembled story..",
+            "release_dates": {
+                "theater": "2013-08-07",
+                "dvd": "2013-11-19"
+            },
+            "ratings": {
+                "critics_rating": "Rotten",
+                "critics_score": 47,
+                "audience_rating": "Upright",
+                "audience_score": 74
+            },
+            "synopsis": "David Burke (Jason Sudeikis) is a small-time pot dealer whose clientele includes chefs and soccer moms, but no kids-after all, he has his scruples. So what could go wrong? Plenty. Preferring to keep a low profile for obvious reasons, he learns the hard way that no good deed goes unpunished when he tries to help out some local teens and winds up getting jumped by a trio of gutter punks. Stealing his stash and his cash, they leave him in major debt to his supplier, Brad (Ed Helms). In order to wipe the slate clean-and maintain a clean bill of health-David must now become a big-time drug smuggler by bringing Brad's latest shipment in from Mexico. Twisting the arms of his neighbors, cynical stripper Rose (Jennifer Aniston) and wannabe customer Kenny (Will Poulter), and the tatted-and-pierced streetwise teen Casey (Emma Roberts), he devises a foolproof plan. One fake wife, two pretend kids and a huge, shiny RV later, the \"Millers\" are headed south of the border for a Fourth of July weekend that is sure to end with a bang. (c) WB",
+            "posters": {
+                "thumbnail": "http://content7.flixster.com/movie/11/17/15/11171565_mob.jpg",
+                "profile": "http://content7.flixster.com/movie/11/17/15/11171565_pro.jpg",
+                "detailed": "http://content7.flixster.com/movie/11/17/15/11171565_det.jpg",
+                "original": "http://content7.flixster.com/movie/11/17/15/11171565_ori.jpg"
+            },
+            "abridged_cast": [
+                {
+                    "name": "Jennifer Aniston",
+                    "id": "162655148",
+                    "characters": [
+                        "Rose O'Reilly"
+                    ]
+                },
+                {
+                    "name": "Jason Sudeikis",
+                    "id": "770702194",
+                    "characters": [
+                        "David Clark"
+                    ]
+                },
+                {
+                    "name": "Will Poulter",
+                    "id": "770791291",
+                    "characters": [
+                        "Kenny Rossmore"
+                    ]
+                },
+                {
+                    "name": "Emma Roberts",
+                    "id": "326298386",
+                    "characters": [
+                        "Casey Mathis"
+                    ]
+                },
+                {
+                    "name": "Ed Helms",
+                    "id": "770691762",
+                    "characters": [
+                        "Brad Gurdlinger"
+                    ]
+                }
+            ],
+            "alternate_ids": {
+                "imdb": "1723121"
+            },
+            "links": {
+                "self": "http://api.rottentomatoes.com/api/public/v1.0/movies/771318592.json",
+                "alternate": "http://www.rottentomatoes.com/m/were_the_millers/",
+                "cast": "http://api.rottentomatoes.com/api/public/v1.0/movies/771318592/cast.json",
+                "clips": "http://api.rottentomatoes.com/api/public/v1.0/movies/771318592/clips.json",
+                "reviews": "http://api.rottentomatoes.com/api/public/v1.0/movies/771318592/reviews.json",
+                "similar": "http://api.rottentomatoes.com/api/public/v1.0/movies/771318592/similar.json"
+            }
+        }
+    ],
+    "links": {
+        "self": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?limit=10&country=us",
+        "alternate": "http://www.rottentomatoes.com/dvd/top_rentals.php"
+    },
+    "link_template": "http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?limit={num-results}&country={country-code}"
+}
