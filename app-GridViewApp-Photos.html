@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram</title>
+<!--
+    Instagram sample app created using the GridView App template.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.backButtonText = "Back";
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+    getPhotos("data/instagram-1.json");
+});
+        
+function getPhotos(url){
+    var grid_html = "", panel_html = "";;
+    $.getJSON(url, function(data){
+        for(var i=0; i<data.data.length; i++){
+            grid_html += '<li><div class="grid-photo-box"><a href="#'+data.data[i].id+'"><img src="'+data.data[i].images.thumbnail.url+'" /></a></div></li>';
+            var caption = data.data[i].caption? data.data[i].caption.text || "" : "";
+            panel_html += '<div class="panel photo" title="Photo" id="'+data.data[i].id+'" data-footer="none"><div class="photo-img"><img src="'+data.data[i].images.standard_resolution.url+'"></div><div class="photo-caption">'+caption+'</div></div>';
+        }
+        $(".grid-photo").append(grid_html);
+        $("#content").append(panel_html);
+    });
+}
+        
+function loadNext(){
+    next_url = "data/instagram-2.json";
+    getPhotos(next_url);
+    $("#more").hide();
+}
+        
+function refreshPhotos(){
+    $(".grid-photo").html("");
+    $(".panel.photo").remove();
+    $("#more").show();
+    getPhotos("data/instagram-1.json");
+}
+
+    </script>
+    <style>
+.photo-img {text-align:center;padding:10px 0}
+.photo-img img {width:100%;max-width:612px}
+.photo-caption {text-align:center; font-size:14px;font-weight:bold}        
+        
+/* CSS responsive square grid */        
+.grid-photo {margin:3px -7px;} 
+.grid-photo:after {content:'';display:block;clear:both;}        
+.grid-photo li {position: relative; display:block; float:left; width: 10%; padding-bottom: 10%;}
+.grid-photo .grid-photo-box {position: absolute;left: 3px;right: 3px;top: 3px;bottom: 3px; background-color: rgba(128,128,128,0.2);} 
+.grid-photo img {width:100%;height:100%}
+@media only screen and (max-width : 1024px) {
+    .grid-photo li {width: 12.5%; padding-bottom: 12.5%;}        
+}        
+@media only screen and (max-width : 768px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}        
+@media only screen and (max-width : 480px) {
+    .grid-photo li {width: 25%; padding-bottom: 25%;}        
+}
+@media only screen and (max-width : 320px) {
+    .grid-photo li {width: 33.3%; padding-bottom: 33.3%;}        
+}
+        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--Grid View Page-->
+        <div class="panel" title="Instagram" id="gridview" data-footer="none" selected="true">
+            <header>
+                <h1>Instagram</h1>
+                <a href="#" class="button icon refresh" style="float:right" onclick="refreshPhotos()"></a>
+            </header>
+            <div class="grid-photo">
+            <!--   <li><div class="grid-photo-box"><a href="#item1"><img src="" /></a></div></li> -->
+            </div>
+            <a id="more" class="button block" onclick="loadNext()">Load More</a>
+        </div>
+        
+    <!--Detail View Pages for each grid items-->
+    <!--
+        <div class="panel" title="Item 1" id="item1">
+            <p>This is detail view for Item 1</p>
+        </div>
+    -->
+    </div>
+</div>
+</body>
+</html>    
