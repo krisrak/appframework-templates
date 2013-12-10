@@ -9,6 +9,13 @@ AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _And
 
 __Below are six basic templates to get you started with your mobile app:__
 
+- [SingleView App](#singleview-app)
+- [FlipView App](#flipview-app)
+- [ListView App](#listview-app)
+- [GridView App](#gridview-app)
+- [SideMenu App](#sidemenu-app)
+- [TabView App](#tabview-app)
+
 These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
 
 _Feel free to send pull-requests for any bugs or enhancements for these templates_
