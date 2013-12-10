@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maps</title>
+<!--
+    Google Maps app created using FlipView App template
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.animateHeaders = false;
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+    setupMap();
+});
+        
+/* Google Maps API code to show map and layers */        
+        
+var map;
+function setupMap(){
+    var mapOptions = {
+        center: new google.maps.LatLng(45.53, -122.67),
+        zoom: 10,
+        mapTypeControl: false,
+        streetViewControl: false,
+        navigationControl: true,
+        scrollwheel: false,
+        navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+} 
+        
+function getGeoLocation(){
+    var success = function(position){
+        map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+    }
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, null);
+    }   
+}       
+
+var trafficLayer = new google.maps.TrafficLayer();
+var transitLayer = new google.maps.TransitLayer();        
+var bicyclingLayer = new google.maps.BicyclingLayer();
+
+function toggleTrafficLayer(){
+    document.getElementById('toggle1').checked ? trafficLayer.setMap(map) : trafficLayer.setMap(null);
+} 
+        
+function toggleTransitLayer(){
+    document.getElementById('toggle2').checked ? transitLayer.setMap(map) : transitLayer.setMap(null);
+} 
+        
+function toggleBicyclingLayer(){
+    document.getElementById('toggle3').checked ? bicyclingLayer.setMap(map) : bicyclingLayer.setMap(null);
+}         
+        
+    </script>
+    <style>
+body, #afui {background-color:#000}  
+#afui #settingsList.list li {padding: 10px} 
+#map {position:absolute;top:0;bottom:-10px;left:-10px;right:-10px}        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        <div class="panel" title="Maps" id="mainpage"  data-footer="none" selected="true">
+            <header>
+                <h1>Maps</h1>
+                <a href="#" class="button icon target" onclick="getGeoLocation()"></a>
+                <a href="#backpage" data-transition="flip" class="button icon settings" style="float:right"></a>
+            </header>
+            <div id="map"></div>
+        </div>
+        
+        <div class="panel" title="Settings" id="backpage"  data-footer="none">
+            <header>
+                <h1>Settings</h1>
+                <a onclick="$.ui.goBack();" data-transition="flip" class="button icon close" style="float:right"></a>
+            </header>
+            <p></p>
+            <ul class="list inset" id="settingsList">
+                <li>
+                    <label>Traffic</label>
+                    <input id="toggle1" type="checkbox" name="toggle1" value="0" class="toggle" onchange="toggleTrafficLayer()">
+                    <label style="left:70%" for="toggle1" data-on="On" data-off="Off"><span></span></label>
+                </li>
+                <li>
+                    <label>Transit</label>
+                    <input id="toggle2" type="checkbox" name="toggle2" value="0" class="toggle" onchange="toggleTransitLayer()">
+                    <label style="left:70%" for="toggle2" data-on="On" data-off="Off"><span></span></label>
+                </li>
+                <li>
+                    <label>Bicycling</label>
+                    <input id="toggle3" type="checkbox" name="toggle3" value="0" class="toggle" onchange="toggleBicyclingLayer()">
+                    <label style="left:70%" for="toggle3" data-on="On" data-off="Off"><span></span></label>
+                </li>
+            </ul> 
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    
