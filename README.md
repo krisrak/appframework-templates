@@ -63,6 +63,36 @@ This template can be used for simple tab view application that has tabs at the b
 
 _(UI theme - Same code on Android vs Windows Phone)_
 
+Sample App created from templates
+=
+
+Below are examples of apps created using the above templates, the sample apps show how data sources can be used to populate the templates to create apps:
+
+Photo App (GridViewApp template)
+-
+This sample app is created from GridViewApp template and uses photo data from Instagram API to show photos in grid and larger photo when clicked on it. (In this sample, API data from Instagram is saved locally and then used for demo)
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-GridViewApp-Photo.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photo.html)
+
+![Photo App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/GridViewApp-Photo.png)
+
+Maps App (FlipViewApp template)
+-
+This sample app is created from FlipViewApp template and uses Google Maps API to show map in main view and has controls in settings view to toggle Google Map layers.
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-FlipViewApp-Maps.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-FlipViewApp-Maps.html)
+
+![Maps App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/FlipViewApp-Maps.png)
+
+Movies App (ListViewApp template)
+-
+This sample app is created from ListViewApp template and uses Flixter API data to show list of top movies and shows movie details when selected. (In this sample, API data from Flixter is saved locally and then used for demo)
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-ListViewApp-Movies.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-ListViewApp-Movies.html)
+
+![Maps App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp-Movies.png)
+
+
 =
 
 _Screenshots from Intel XDK - HTML5 Development Tool which helps you to_ ___design, code, simulate, test, debug and build___ _hybrid apps for iPhone, iPad, Android, Windows Phone, Tizen and more devices. [more information on Intel XDK](http://xdk-software.intel.com/)_
