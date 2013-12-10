@@ -32,15 +32,18 @@ $(document).ready(function(){
 });
         
 function getPhotos(url){
-    var grid_html = "", panel_html = "";;
+    var grid_html = "";
     $.getJSON(url, function(data){
         for(var i=0; i<data.data.length; i++){
             grid_html += '<li><div class="grid-photo-box"><a href="#'+data.data[i].id+'"><img src="'+data.data[i].images.thumbnail.url+'" /></a></div></li>';
             var caption = data.data[i].caption? data.data[i].caption.text || "" : "";
-            panel_html += '<div class="panel photo" title="Photo" id="'+data.data[i].id+'" data-footer="none"><div class="photo-img"><img src="'+data.data[i].images.standard_resolution.url+'"></div><div class="photo-caption">'+caption+'</div></div>';
+            
+            /* Dynamically add panel */
+            var panel_content = '<div class="photo-img"><img src="'+data.data[i].images.standard_resolution.url+'"></div><div class="photo-caption">'+caption+'</div>';
+            $.ui.addContentDiv(data.data[i].id, panel_content, "PHOTO");
+
         }
         $(".grid-photo").append(grid_html);
-        $("#content").append(panel_html);
     });
 }
         
