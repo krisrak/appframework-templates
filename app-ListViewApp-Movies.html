@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Movies</title>
+<!--
+    Sample movie app created using the ListView App template.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.backButtonText = "Back";
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+    getData();
+});
+        
+function getData() {
+    $.getJSON("data/flixter-1.json", function(data){
+        var list_html = "";
+        for(var i=0; i< data.movies.length; i++){
+            var id = data.movies[i].id;
+            var title = data.movies[i].title;
+            var rating = data.movies[i].mpaa_rating;
+            var time = data.movies[i].runtime;
+            var year = data.movies[i].year;
+            var synopsis = data.movies[i].synopsis;
+            var img = data.movies[i].posters.profile;
+            
+            list_html += '<li><a href="#'+id+'">'+ title +'</a></li>';
+            
+            /* Dynamically add panel */
+            var panel_content = '<h2>'+title+'</h2><div class="photo"><img src="'+img+'" /></div><h2 class="info"><br/>'+year+'<br/><br/>'+rating+'<br/><br/>'+time+' min</h2><p style="clear:both">'+synopsis+'</p>';
+            $.ui.addContentDiv(id, panel_content, "Movie Info"); 
+        }
+        $("#dataList").append(list_html);
+    });
+} 
+
+function showAbout(){
+    $.ui.popup({
+        title:"About",
+        message:"Data from Flixter",
+        cancelText:"OK",
+        cancelCallback: function(){},
+        doneText:"",
+        doneCallback: function(){},
+        cancelOnly:true
+    })    
+}
+      
+
+    </script>
+    <style>      
+.panel .photo, .panel .info {float:left; width:150px;}
+.info {padding:20px 0}        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--List View Page-->
+        <div class="panel" title="Top Movies" id="listview" data-footer="none" selected="true">
+            <header>
+                <h1>Top Movies</h1>
+                <a href="#" class="button icon info" style="float:right" onclick="showAbout()"></a>
+            </header>
+            <ul class="list" id="dataList">
+                
+            </ul>
+        </div>
+        
+    <!--Detail View Pages for each list items-->
+    <!--
+        <div class="panel" title="Title" id="panel1" data-footer="none">
+            <p>content for panel</p>
+        </div>
+    -->
+        
+    </div>
+</div>
+</body>
+</html>    
