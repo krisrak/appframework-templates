@@ -72,7 +72,7 @@ Photo App (GridViewApp template)
 -
 This sample app is created from GridViewApp template and uses photo data from Instagram API to show photos in grid and larger photo when clicked on it. (In this sample, API data from Instagram is saved locally and then used for demo)
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-GridViewApp-Photos.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photos.html)
+&rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-GridViewApp-Photos.html)
 
 ![Photo App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/GridViewApp-Photo.png)
 
@@ -88,7 +88,7 @@ Movies App (ListViewApp template)
 -
 This sample app is created from ListViewApp template and uses Flixter API data to show list of top movies and shows movie details when selected. (In this sample, API data from Flixter is saved locally and then used for demo)
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/app-ListViewApp-Movies.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-ListViewApp-Movies.html)
+&rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-ListViewApp-Movies.html)
 
 ![Maps App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp-Movies.png)
 
