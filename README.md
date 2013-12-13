@@ -15,7 +15,7 @@ __Below are seven basic templates to get you started with your mobile app:__
 - [GridView App](#gridview-app)
 - [SideMenu App](#sidemenu-app)
 - [TabView App](#tabview-app)
-- [loginView App](#loginview-app)
+- [LoginView App](#loginview-app)
 
 These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
 
@@ -73,7 +73,7 @@ _(UI theme - Same code on Android vs Windows Phone)_
 
 LoginView App
 -
-This template can be used for creating an app that requires login and registration before the app can be started, it shows option for login and register and take you to login form view and register form view, for creating applications similar to Facebook App or Twitter app.
+This template can be used for creating an app that requires login and registration before the app can be started, it shows option for login/register and takes you to login form view and register form view, for creating applications similar to Facebook app or Twitter app.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-LoginViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-LoginViewApp.html)
 
