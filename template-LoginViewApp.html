@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login template</title>
+<!--
+    This template can be used for creating apps that require user login and user registration before starting actual app.
+--> 
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.backButtonText = "Back";
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.launch();
+    
+    // setup signin and signup button events
+    $("#login").on("click", function(){
+        signIn();
+    });
+    
+    $("#register").on("click", function(){
+        signUp();
+    });
+});
+        
+function signIn(){
+    
+    // sigin code here
+    
+    $.ui.loadContent("main", null, null, "fade");
+}
+        
+function signUp(){
+
+    // signup code here
+    
+    $.ui.loadContent("main", null, null, "fade");
+}   
+        
+function startApp(){
+    // clears all back button history
+    $.ui.clearHistory();  
+    
+    // your app code here
+}
+
+    </script>
+    <style>
+
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    
+    <div id="content" style=""> 
+        
+    <!-- Pages-->
+        <div class="panel" title="Welcome" id="page1" data-header="none" data-footer="none" selected="true">
+            <div style="text-align:center">
+            <br>
+            <br>
+            <h1>Welcome</h1>
+            <br>
+            <br>
+            <p>This is space for welcome message</p>
+            <br>
+            <br>
+            </div>    
+            <ul class="list inset">
+                <li><a href="#signin" class="icon user" style="text-align:center">Login</a></li>
+                <li><a href="#signup" class="icon pencil" style="text-align:center">Register</a></li>
+            </ul>
+        </div>
+        
+        <div class="panel" title="Login" id="signin" data-footer="none">
+            <div style="text-align:center">
+            <br>
+            <br>
+            <p>This is space for login message</p>
+            <br>
+            <br>
+            </div>
+            <input name="username" type="text" placeholder="username" />
+            <input name="password" type="password" placeholder="password" />
+            <a class="button block green" href="#" id="login">Login</a>
+        </div>
+        
+        <div class="panel" title="Register" id="signup" data-footer="none">
+            <div style="text-align:center">
+            <br>
+            <br>
+            <p>This is space for register message</p>
+            <br>
+            <br>
+            </div>
+            <input name="name" type="text" placeholder="Name" />
+            <input name="email" type="text" placeholder="Email" />
+            <input name="username" type="text" placeholder="username" />
+            <input name="password" type="password" placeholder="password" />
+            <input name="password2" type="password" placeholder="confirm password" />
+            <a class="button block green" href="#" id="register">Register</a>
+        </div>
+        
+        <div class="panel" title="Start" id="main" data-load="startApp">
+            <p>This is App page after user has signed in...</p>
+        </div>
+        
+    </div>
+
+</div>
+</body>
+</html>    
