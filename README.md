@@ -7,7 +7,7 @@ You can use Intel AppFramework to create __mobile web apps__ or create __hybrid 
 
 AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices. Notice the screentshots below, the app code is same but the look and feel changes to match the device's native style.
 
-__Below are six basic templates to get you started with your mobile app:__
+__Below are seven basic templates to get you started with your mobile app:__
 
 - [SingleView App](#singleview-app)
 - [FlipView App](#flipview-app)
@@ -15,6 +15,7 @@ __Below are six basic templates to get you started with your mobile app:__
 - [GridView App](#gridview-app)
 - [SideMenu App](#sidemenu-app)
 - [TabView App](#tabview-app)
+- [loginView App](#loginview-app)
 
 These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
 
@@ -69,6 +70,15 @@ This template can be used for simple tab view application that has tabs at the b
 ![TabViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/TabViewApp.png)
 
 _(UI theme - Same code on Android vs Windows Phone)_
+
+LoginView App
+-
+This template can be used for creating an app that requires login and registration before the app can be started, it shows option for login and register and take you to login form view and register form view, for creating applications similar to Facebook App or Twitter app.
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-LoginViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-LoginViewApp.html)
+
+![LoginViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/LoginViewApp.png)
+
 
 Sample App created from templates
 =
