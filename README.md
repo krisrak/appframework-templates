@@ -5,7 +5,7 @@ Below are basic HTML5 mobile app templates created using [Intel App Framework] (
 
 You can use Intel AppFramework to create __mobile web apps__ or create __hybrid apps__ using tools like [_Intel XDK_](http://xdk-software.intel.com/) or _Adobe Phonegap build_ to build native packaged apps.
 
-AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices. Notice the screentshots below, the app code is same but the look and feel changes to match the device's native style.
+AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices. Notice the screenshots below, the app code is same but the look and feel changes to match the device's native style.
 
 __Below are seven basic templates to get you started with your mobile app:__
 
@@ -23,7 +23,7 @@ _Feel free to send pull-requests for any bugs or enhancements for these template
 
 SingleView App
 -
-This template can be used for simple application that has just one view, for creating applications similar to Flash light app or Calculator app. 
+This template can be used for simple application that has just one view, this template can be used for creating applications similar to __Flash light__ app or __Calculator app__. 
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SingleViewApp.html)
 
@@ -31,7 +31,7 @@ This template can be used for simple application that has just one view, for cre
 
 FlipView App
 -
-This template can be used for simple utility application that has a main view and a settings view, for creating applications similar to Maps app, Weather App or Clock app. 
+This template can be used for simple utility application that has a main view and a settings view, this template can be used for creating applications similar to __Maps app__, __Weather app__ or __Clock app__. 
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-FlipViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-FlipViewApp.html)
 
@@ -39,7 +39,7 @@ This template can be used for simple utility application that has a main view an
 
 ListView App
 -
-This template can be used for simple list view application that has a main view with scrollable list and detail view for each list item, this can be used for creating applications similar to Mail app, Messages App or Twitter app.
+This template can be used for simple list view application that has a main view with scrollable list and detail view for each list item, this template can be used for creating applications similar to __Mail app__, __Messages app__ or __Twitter app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp.html)
 
@@ -47,7 +47,7 @@ This template can be used for simple list view application that has a main view 
 
 GridView App
 -
-This template can be used for photo app with grid view that will open detail view, for creating applications similar to Photo App or Instagram app.
+This template can be used for photo app with grid view that will open detail view, this template can be used for creating applications similar to __Photo app__ or __Instagram app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-GridViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-GridViewApp.html)
 
@@ -55,7 +55,7 @@ This template can be used for photo app with grid view that will open detail vie
 
 SideMenu App
 -
-This template can be used for simple app with side menu that can be opened to switch views, for creating applications similar to Youtube App or Gmail app.
+This template can be used for simple app with side menu that can be opened to switch views, this template can be used for creating applications similar to __Youtube app__ or __Gmail app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp.html)
 
@@ -63,7 +63,7 @@ This template can be used for simple app with side menu that can be opened to sw
 
 TabView App
 -
-This template can be used for simple tab view application that has tabs at the bottom to switch views, for creating applications similar to Phone app, Facebook App or Instagram app.
+This template can be used for simple tab view application that has tabs at the bottom to switch views, this template can be used for creating applications similar to __Phone app__, __Facebook app__ or __Instagram app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-TabViewApp.html)
 
@@ -73,7 +73,7 @@ _(UI theme - Same code on Android vs Windows Phone)_
 
 LoginView App
 -
-This template can be used for creating an app that requires login and registration before the app can be started, it shows option for login/register and takes you to login form view and register form view, for creating applications similar to Facebook app or Twitter app.
+This template can be used for creating an app that requires login and registration before the app can be started, it shows option for login/register and takes you to login form view and register form view, this template can be used for creating applications similar to __Facebook app__ or __Twitter app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-LoginViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-LoginViewApp.html)
 
