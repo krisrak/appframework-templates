@@ -71,7 +71,9 @@ function startApp(){
     
     <div id="content" style=""> 
         
-    <!-- Pages-->
+    <!-- Views -->
+        
+        <!-- Welcome View -->
         <div class="panel" title="Welcome" id="page1" data-header="none" data-footer="none" selected="true">
             <div style="text-align:center">
             <br>
@@ -89,6 +91,7 @@ function startApp(){
             </ul>
         </div>
         
+        <!-- Login View -->
         <div class="panel" title="Login" id="signin" data-footer="none">
             <div style="text-align:center">
             <br>
@@ -102,6 +105,7 @@ function startApp(){
             <a class="button block green" href="#" id="login">Login</a>
         </div>
         
+        <!-- Register View -->
         <div class="panel" title="Register" id="signup" data-footer="none">
             <div style="text-align:center">
             <br>
@@ -118,6 +122,7 @@ function startApp(){
             <a class="button block green" href="#" id="register">Register</a>
         </div>
         
+        <!-- Main App View -->
         <div class="panel" title="Start" id="main" data-load="startApp">
             <p>This is App page after user has signed in...</p>
         </div>
