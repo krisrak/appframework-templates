@@ -8,7 +8,7 @@ This template can be used for simple application that has just one view, this te
 
 SingleView with header and footer
 -
-The HTML code for creating this UI looks like this:
+The HTML code for creating the above UI looks like this:
 ```
 <div id="afui">
     <div id="content">
@@ -37,7 +37,7 @@ You will have to add a `<header>` element within the `.panel` to create a header
             <header>
                 <h1>New Title</h1>
                 <a href="#" class="button icon location" onclick="foo()"></a>
-                <a href="#settings" class="button icon settings" onclick="foo()" style="float:right">Setup</a>
+                <a href="#settings" class="button icon settings" style="float:right">Setup</a>
             </header>
             <p>This is a Single View App template</p>
         </div>
@@ -46,6 +46,8 @@ Things to note:
 - `<h1>` element for title should be the first element, this text will override the `title` attribute in the `.panel`
 - button can be specified like any other `afui` button
 - button on the right should have a `style="float:right"`
+
+![SingleViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SingleViewApp-header.png)
 
 If you plan to use this same header in a different page then you can and a `id` move the `<header>` outside the `#content` DIV and reference the header `id` in the `.panel`'s `data-header` attribute. The code will look like this:
 ```
@@ -65,4 +67,10 @@ If you plan to use this same header in a different page then you can and a `id` 
 
 </div>
 ```
+Documentation
+-
+Full documentation for AFUI are below, it explains all the attributes for `.panel` and also javascript properties and methods for manupilating UI:
+- [Page Layout](http://app-framework-software.intel.com/documentation.php#afui/afui_layout)
+- [Panel properties](http://app-framework-software.intel.com/documentation.php#afui/afui_panels)
+- [Full Documentation](http://app-framework-software.intel.com/documentation.php#afui/afui_about)
 
