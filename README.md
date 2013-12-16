@@ -25,7 +25,7 @@ SingleView App
 -
 This template can be used for simple application that has just one view, this template can be used for creating applications similar to __Flash light__ app or __Calculator app__. 
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SingleViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SingleViewApp.html) &rarr; [Documentation](https://github.com/krisrak/appframework-templates/blob/master/documentation/SingleViewApp.md)
 
 ![SingleViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SingleViewApp.png)
 
