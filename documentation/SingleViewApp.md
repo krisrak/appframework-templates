@@ -1,4 +1,4 @@
-SingleViewApp
+SingleViewApp template
 =
 This template can be used for simple application that has just one view, this template can be used for creating applications similar to __Flash light__ app or __Calculator app__. 
 
@@ -48,6 +48,8 @@ Things to note:
 - button on the right should have a `style="float:right"`
 
 ![SingleViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SingleViewApp-header.png)
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp-header.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SingleViewApp-header.html)
 
 If you plan to use this same header in a different page then you can and a `id` move the `<header>` outside the `#content` DIV and reference the header `id` in the `.panel`'s `data-header` attribute. The code will look like this:
 ```
