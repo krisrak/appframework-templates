@@ -64,7 +64,7 @@ Adding a `inset` class for the list will make the list appear like below:
 ```
         <div class="panel" title="Title" id="listview" data-footer="none" selected="true">
             <br/>
-            <ul class="list">
+            <ul class="list inset">
                 <li><a href="#item1">Item 1</a></li>
                 <li><a href="#item2">Item 2</a></li>
                 <li><a href="#item3">Item 3</a></li>
@@ -74,7 +74,7 @@ Adding a `inset` class for the list will make the list appear like below:
 
 ListView with icons in list
 -
-Adding a `icon` class and class for name of icon from (afui icons)[https://github.com/krisrak/appframework-templates/blob/master/appframework/icons.css] for each list item will make the list appear like below:
+Adding a `icon` class and class for name of icon from [afui icons](https://github.com/krisrak/appframework-templates/blob/master/appframework/icons.css) for each list item will make the list appear like below:
 
 ![ListViewApp icons](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp-icons.png)
 
@@ -90,6 +90,6 @@ Adding a `icon` class and class for name of icon from (afui icons)[https://githu
 
 Documentation
 -
-Full documentation for AFUI are below, it explains all the attributes for `.panel` and also javascript properties and methods for manupilating UI:
+Full documentation for AFUI are below, it explains all styled list in AFUI:
 - [Styled List](http://app-framework-software.intel.com/documentation.php#afui/afui_lists)
 - [Full Documentation](http://app-framework-software.intel.com/documentation.php#afui/afui_about)
