@@ -11,27 +11,27 @@
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
 
-<!-- Required if building app using Intel XDK -->    
+<!-- Required if packaging to native app using Intel XDK -->    
     <script src="intelxdk.js"></script>
     <script src="xhr.js"></script>
-
-    <script>
-
-$.ui.autoLaunch = false;
-$.ui.animateHeaders = false;
-
-/* Required if building app using Intel XDK */        
-function onDeviceReady(){ 
-    $.ui.launch();
-    intel.xdk.device.hideSplashScreen();
-}
-
-$(document).ready(function(){
-    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
-    $.ui.launch();
-});
-
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
     </script>
+<!-- end Intel XDK code -->
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.animateHeaders = false;
+                
+        $(document).ready(function(){
+            $.ui.launch();
+        });
+    </script>    
+
     <style>
 body, #afui {background-color:#000}  
 #afui #settingsList.list li {padding: 10px}        
@@ -40,6 +40,8 @@ body, #afui {background-color:#000}
 <body> 
 <div id="afui">
     <div id="content" style="">
+        
+        <!-- main panel -->
         <div class="panel" title="Title" id="mainpage"  data-footer="none" selected="true">
             <header>
                 <h1>Title</h1>
@@ -48,6 +50,7 @@ body, #afui {background-color:#000}
             <p>This is a Flip View App template main page.</p>
         </div>
         
+        <!-- back panel -->
         <div class="panel" title="Settings" id="backpage"  data-footer="none">
             <header>
                 <h1>Settings</h1>

@@ -11,60 +11,57 @@
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
 
-<!-- Required if building app using Intel XDK -->    
+<!-- Required if packaging to native app using Intel XDK -->    
     <script src="intelxdk.js"></script>
     <script src="xhr.js"></script>
-
-    <script>
-
-$.ui.autoLaunch = false;
-$.ui.backButtonText = "Back";
-
-/* Required if building app using Intel XDK */        
-function onDeviceReady(){ 
-    $.ui.launch();
-    intel.xdk.device.hideSplashScreen();
-}
-
-$(document).ready(function(){
-    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
-    $.ui.launch();
-    
-    // setup signin and signup button events
-    $("#login").on("click", function(){
-        signIn();
-    });
-    
-    $("#register").on("click", function(){
-        signUp();
-    });
-});
-        
-function signIn(){
-    
-    // sigin code here
-    
-    $.ui.loadContent("main", null, null, "fade");
-}
-        
-function signUp(){
-
-    // signup code here
-    
-    $.ui.loadContent("main", null, null, "fade");
-}   
-        
-function startApp(){
-    // clears all back button history
-    $.ui.clearHistory();  
-    
-    // your app code here
-}
-
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
     </script>
-    <style>
+<!-- end Intel XDK code -->
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.backButtonText = "Back";
+    
+        $(document).ready(function(){
+            $.ui.launch();
+            
+            // setup signin and signup button events
+            $("#login").on("click", function(){
+                signIn();
+            });
+            
+            $("#register").on("click", function(){
+                signUp();
+            });
+        });
+                
+        function signIn(){
+            
+            // sigin code here
+            
+            $.ui.loadContent("main", null, null, "fade");
+        }
+                
+        function signUp(){
+        
+            // signup code here
+            
+            $.ui.loadContent("main", null, null, "fade");
+        }   
+                
+        function startApp(){
+            // clears all back button history
+            $.ui.clearHistory();  
+            
+            // your app code here
+        }
 
-    </style>    
+    </script>   
 </head>
 <body> 
 <div id="afui">
