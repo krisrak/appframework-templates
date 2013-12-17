@@ -62,14 +62,14 @@
 </head>
 <body> 
 <div id="afui">
+    <!-- Custom header with buttons -->
+    <header id="header1">
+        <h1>My Title</h1>
+        <a href="#" class="button icon trash" onclick="trash()"></a>
+        <a href="#" class="button icon user" onclick="login()" style="float:right">Login</a>
+    </header>
+    
     <div id="content">
-        <!-- Custom header with buttons -->
-        <header id="header1">
-            <h1>My Title</h1>
-            <a href="#" class="button icon trash" onclick="trash()"></a>
-            <a href="#" class="button icon user" onclick="login()" style="float:right">Login</a>
-        </header>
-        
         <!-- SingleView panel -->
         <div class="panel" title="Title" id="page1" data-header="header1" data-footer="none" selected="true">
             <p>This is a Single View App template with custom header</p>
