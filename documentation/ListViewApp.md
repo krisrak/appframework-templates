@@ -88,6 +88,46 @@ Adding a `icon` class and class for name of icon from [afui icons](https://githu
         </div>
 ```
 
+Dynamically create ListView
+-
+If you are loading data into a listview via a RESTful API, then the listview and corresponding detailviews will have to be created dynamically. 
+
+This can be done in JavaScript by appending list items `<li>` to the `<ul class="list">` using `$().append()` and the detailview panels for each list item can be created using the `$.ui.addContentDiv()` method of AFUI.
+
+Below is the code to create list item and detailview dynamically in JavaScript:
+
+```
+// get data for id, title and detail from API 
+        var id, title, detail;
+
+// create list item
+        list_html += '<li><a href="#'+id+'">'+ title +'</a></li>';
+        $(".list").append(list_html);
+
+// create detailview panel for the list item
+        var panel_html = '<p>'+detail+'</p>';
+        $.ui.addContentDiv(id, panel_html, "Details");
+```
+HTML code for UI:
+```
+    <div id="content">
+        <div class="panel" title="Title" data-footer="none" selected="true">
+            <ul class="list"></ul>
+        </div>
+    </div>
+```
+__Things to note:__
+- the list item `href` is assigned a unique value `id` from API, this same `id` is used for panel id
+- the UI HTML contains just a panel for list view and the list is left empty
+- `$.ui.addContentDiv()` will dynamically create a panel and takes parameters id, panel content and title for panel.
+
+This sample below gets data from API* and dynamically creates list items and uses `$.ui.addContentDiv()` to dynamically add panels with content from API. _(In this sample, API data from Flixter is saved locally and then used for demo)_
+
+&rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/app-ListViewApp-Movies.html)
+
+![Maps App](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp-Movies.png)
+
+
 Documentation
 -
 Full documentation for AFUI are below, it explains all styled list in AFUI:
