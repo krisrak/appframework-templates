@@ -41,7 +41,7 @@ ListView App
 -
 This template can be used for simple list view application that has a main view with scrollable list and detail view for each list item, this template can be used for creating applications similar to __Mail app__, __Messages app__ or __Twitter app__.
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp.html) &rarr; [Documentation](https://github.com/krisrak/appframework-templates/blob/master/documentation/ListViewApp.md)
 
 ![ListViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp.png)
 
