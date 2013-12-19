@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List View App template with pull refresh</title>
+<!--
+    This template can be used for simple list view application that has a main view with list and detail view for each list item, for applications like Mail app, Messages App or Twitter app.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if packaging to native app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    </script>
+<!-- end Intel XDK code -->
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.backButtonText = "Back";
+                
+        $(document).ready(function(){
+            setupListUpdate();
+            $.ui.launch();
+        });
+        
+        // enable pullToRefresh and infiniteScroll to listview (af.scroller.js)
+        function setupListUpdate(){
+            $.ui.ready(function () {
+                var scrollerList = $("#listview").scroller();
+                
+                scrollerList.addPullToRefresh();
+                $.bind(scrollerList, "refresh-release", function () {
+                    var self = this;
+                    setTimeout(function () { // get content from your api using ajax and display instead of setTimeout.
+                        // add new content at top of list
+                        $("#listview ul").prepend("<li><a href='#detailview'>New Item (via Pull Refresh)</a></li>");                                    
+                        self.hideRefresh();
+                    }, 2000);
+                    return false; //tells it to not auto-cancel the refresh
+                });
+                
+                scrollerList.addInfinite();
+                $.bind(scrollerList, "infinite-scroll", function () {
+                    var self = this;
+                    $("#listview").find("#infinite").text("Loading...")
+                    setTimeout(function () { // get content from your api using ajax and display instead of setTimeout.
+                        $("#listview").find("#infinite").text("Load More");
+                        // add new content at bottom of list
+                        $("#listview ul").append("<li><a href='#detailview'>Next Item (via Infinite Scroll)</a></li>");
+                        self.clearInfinite();
+                    }, 2000);
+                });
+                
+                scrollerList.enable();
+            });
+        }
+    </script>
+    <style>
+#infinite {height:60px;line-height:60px;font-weight:bold;text-align:center}        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--List View Page-->
+        <div class="panel" title="Title" id="listview" data-footer="none" selected="true">
+            <ul class="list">
+                <li><a href="#detailview">Item 1</a></li>
+                <li><a href="#detailview">Item 2</a></li>
+                <li><a href="#detailview">Item 3</a></li>
+                <li><a href="#detailview">Item 4</a></li>
+                <li><a href="#detailview">Item 5</a></li>
+                <li><a href="#detailview">Item 6</a></li>
+                <li><a href="#detailview">Item 7</a></li>
+                <li><a href="#detailview">Item 8</a></li>
+                <li><a href="#detailview">Item 9</a></li>
+                <li><a href="#detailview">Item 10</a></li>
+                <li><a href="#detailview">Item 11</a></li>
+                <li><a href="#detailview">Item 12</a></li>
+            </ul>
+            <div id='infinite'>Load More</div>
+        </div>
+        
+    <!--Detail View Pages for each list items-->
+        <div class="panel" title="Details" id="detailview" data-footer="none">
+            <p>This is detail view for list item</p>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    
