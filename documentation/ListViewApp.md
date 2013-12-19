@@ -1,5 +1,13 @@
 ListViewApp template
 -
+
+- [ListView with simple list](#listview-with-simple-list)
+- [ListView with custom list](#listview-with-custom-list)
+- [ListView with inset style](#listview-with-inset-style)
+- [ListView with icons in list](#listview-with-icons-in-list)
+- [ListView with pull-refresh](#listview-with-pull-refresh)
+- [Dynamically create ListView](#dynamically-create-listview)
+
 This template can be used for simple list view application that has a main view with scrollable list and detail view for each list item, this template can be used for creating applications similar to __Mail app__, __Messages app__ or __Twitter app__.
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp.html)
@@ -87,6 +95,18 @@ Adding a `icon` class and class for name of icon from [afui icons](https://githu
             </ul>
         </div>
 ```
+
+ListView with pull-refresh
+-
+The `af.scroller.js` plugin included with the AFUI provides the functionality that allows you to update/refresh the listview with new content by pulling the listview down and releasing it. The `addPullToRefresh()` method of `$().scroller()` plugin can be used to enable pull-refresh feature and the `refresh-release` event handler can be used to make AJAX call to get data and update list or prepend the existing listview with new content.
+
+The `af.scroller.js` plugin also provides the functionality that allows you to load new content when scroll reaches the end of listview. The `addInfinite()` method of `$().scroller()` plugin can be used to enable infinite scroller and the `infinite-scroll` event handler can be used to make an AJAX call to get new data and append to the listview.
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp-pullRefresh.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ListViewApp-pullRefresh.html)
+
+![ListViewApp pull-refresh](https://raw.github.com/krisrak/appframework-templates/master/screenshots/ListViewApp-pullRefresh.png)
+
+These features are helpful when creating social apps similar to Twitter, Facebook or Instagram that loads real-time data via a RESTful API and pagination is available for data feed. 
 
 Dynamically create ListView
 -
