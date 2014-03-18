@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modal View App template</title>
+<!--
+    This template can be used for simple utility application that has a main view and a settings modal view, for applications like Maps app, Weather App or Clock app.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if packaging to native app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    </script>
+<!-- end Intel XDK code -->
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.animateHeaders = false;
+                
+        $(document).ready(function(){
+            $.ui.launch();
+        });
+    </script>    
+
+    <style> 
+#afui #settingsList.list li {padding: 10px}        
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+        <!-- main panel -->
+        <div class="panel" title="Title" id="mainpage"  data-footer="none" selected="true">
+            <header>
+                <h1>Title</h1>
+                <a href="#modal" data-transition="flip" class="button icon settings"></a>
+            </header>
+            <p>This is a Modal View App template main page.</p>          
+        </div>
+        
+        <!-- modal view panel -->
+        <div class="panel" title="Settings" id="modal" modal="true" data-footer="none">
+            <p>This is Modal view for settings</p>
+            <ul class="list inset" id="settingsList">
+                <li>
+                    <label>Setting One</label>
+                    <input id="toggle1" type="checkbox" name="toggle1" value="1" class="toggle" checked><label style="left:70%" for="toggle1" data-on="On" data-off="Off"><span></span></label>
+                </li>
+                <li>
+                    <label>Setting Two</label>
+                    <input id="toggle2" type="checkbox" name="toggle2" value="0" class="toggle"><label style="left:70%" for="toggle2" data-on="On" data-off="Off"><span></span></label>
+                </li>
+            </ul> 
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    
