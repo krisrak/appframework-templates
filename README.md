@@ -10,6 +10,7 @@ AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _And
 __Below are seven basic templates to get you started with your mobile app:__
 
 - [SingleView App](#singleview-app)
+- [ModalView App](#modalview-app)
 - [FlipView App](#flipview-app)
 - [ListView App](#listview-app)
 - [GridView App](#gridview-app)
@@ -29,9 +30,17 @@ This template can be used for simple application that has just one view, this te
 
 ![SingleViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SingleViewApp.png)
 
+ModalView App
+-
+This template can be used for simple utility application that has a main view and a settings view that slides up, this template can be used for creating applications similar to __Maps app__, __Weather app__ or __Clock app__. 
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ModalViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-ModalViewApp.html)
+
+![ModalViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/FlipViewApp.png)
+
 FlipView App
 -
-This template can be used for simple utility application that has a main view and a settings view, this template can be used for creating applications similar to __Maps app__, __Weather app__ or __Clock app__. 
+This template can be used for simple utility application that has a main view and a settings view that flips around, this template can be used for creating applications similar to __Maps app__, __Weather app__ or __Clock app__. 
 
 &rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-FlipViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-FlipViewApp.html)
 
@@ -57,7 +66,7 @@ SideMenu App
 -
 This template can be used for simple app with side menu that can be opened to switch views, this template can be used for creating applications similar to __Youtube app__ or __Gmail app__.
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-left.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp-left.html)
 
 ![SideMenuApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SideMenuApp.png)
 
