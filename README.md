@@ -66,7 +66,7 @@ SideMenu App
 -
 This template can be used for simple app with side menu that can be opened to switch views, this template can be used for creating applications similar to __Youtube app__ or __Gmail app__.
 
-&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-left.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp-left.html)
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-left.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-SideMenuApp-left.html) &rarr; [Documentation](https://github.com/krisrak/appframework-templates/blob/master/documentation/SideMenuApp.md)
 
 ![SideMenuApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/SideMenuApp.png)
 
