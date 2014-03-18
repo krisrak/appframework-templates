@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Right Side Menu App template</title>
+<!--
+    This template can be used for simple app with side menu that can be opened to switch views, for applications like Facebook App or other Chat app.
+-->  
+    
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    <!--AppFramework plugin for sliding side menu-->
+    <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.slidemenu.js"></script>
+
+<!-- Required if building app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.animateHeaders = false;        
+
+/* Required if building app using Intel XDK */        
+function onDeviceReady(){ 
+    $.ui.launch();
+    intel.xdk.device.hideSplashScreen();
+}
+
+$(document).ready(function(){
+    document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    $.ui.setRightSideMenuWidth(220);
+    $.ui.launch();
+});
+
+    </script>
+    <style>
+
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    
+    <!--right side menu Navigation bar -->
+    <aside>
+        <ul class="list">
+            <li class="divider">Chat</li>
+            <li class="icon user">Mike</li>
+            <li class="icon user">Brad</li>
+            <li class="icon user">John</li>
+            <li class="icon user">Sam</li>
+        </ul>
+    </aside>    
+    
+    <div id="content" style=""> 
+        
+    <!--Main Pages-->
+        <div class="panel" title="Home" id="home" data-footer="none" selected="true">
+            <header>
+                <a onclick='$.ui.toggleRightSideMenu()' class='button icon chat' style="float:right"></a>
+                <h1>Home</h1>
+            </header>
+            <p>This is right side menu demo</p>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>    
