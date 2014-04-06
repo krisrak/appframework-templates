@@ -7,7 +7,7 @@ You can use Intel AppFramework to create __mobile web apps__ or create __hybrid 
 
 AppFramework has UI themes which look and feel similar to _iPhone_, _iPad_, _Android_, _Windows Phone_, _Blackberry 10_ and _Tizen_, the UI theme will be automatically applied by default when opened on these devices. Notice the screenshots below, the app code is same but the look and feel changes to match the device's native style.
 
-__Below are seven basic templates to get you started with your mobile app:__
+__Below are 8 basic templates to get you started with your mobile app:__
 
 - [SingleView App](#singleview-app)
 - [ModalView App](#modalview-app)
@@ -19,6 +19,22 @@ __Below are seven basic templates to get you started with your mobile app:__
 - [LoginView App](#loginview-app)
 
 These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
+
+Template Demos
+--------------
+
+Try out these template demos on actual touch phone or tablet devices:
+
+| &darr; Basic    | &darr; Custom &rarr;  | |
+| --------------- | --- | --- | 
+| [Single View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp.html) | [Single View App - custom header](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SingleViewApp-header.html) | | |
+| [Modal View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ModalViewApp.html)  | [Modal View App - custom header](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ModalViewApp-custom.html) | | |
+| [Flip View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-FlipViewApp.html)   | | | |
+| [List View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp.html)   | [List View App - pull to refresh](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp-pullToRefresh.html) | [List View App - social](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-ListViewApp-social.html) | |
+| [Grid View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-GridViewApp.html)   | | | |
+| [Side Menu App - left](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-left.html) | [Side Menu App - right](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-right.html) | [Side Menu App - left & right](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-both.html) |
+| [Tab View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp.html)    | [Tab View App - bottom button tabs](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp-bottomButtonTabs.html) | [Tab View App - top button tabs](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp-topButtonTabs.html) | |
+| [Login View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-LoginViewApp.html)  | | | |
 
 _Feel free to send pull-requests for any bugs or enhancements for these templates_
 
