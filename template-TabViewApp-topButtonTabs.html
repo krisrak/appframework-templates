@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab View App template - button</title>
+<!--
+    This template can be used for simple tab view application that has grouped button tabs at the bottom to switch views, for applications like Phone app or Messages App.
+--> 
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+<!-- Required if packaging to native app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    </script>
+<!-- end Intel XDK code -->
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.animateHeaders = false;
+        $.ui.backButtonText = "Back"; 
+                
+        $(document).ready(function(){
+            $.ui.launch();
+        });
+    </script>  
+    <style>
+        #navbar {text-align: center;border-bottom:1px solid #ccc}
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    
+    <!--Footer with Tabs or Navigation bar -->
+    <div id="navbar">
+        <div class="button-grouped tabbed">
+            <a href="#page1" class="button pressed" data-transition="none">Calls</a>
+            <a href="#page2" class="button" data-transition="none">Messages</a>
+        </div>    
+    </div> 
+    
+    <div id="content">        
+        
+    <!--Tab View Pages-->
+        <div class="panel" title="Calls" id="page1" data-header="none" selected="true">
+            <ul class="list">
+                <li><a href="#call">Call #1</a></li>
+                <li><a href="#call">Call #2</a></li>
+                <li><a href="#call">Call #3</a></li>                
+            </ul> 
+        </div>
+        
+        <div class="panel" title="Messages" id="page2" data-header="none">
+            <ul class="list">
+                <li><a href="#message">Message #1</a></li>
+                <li><a href="#message">Message #2</a></li>
+                <li><a href="#message">Message #3</a></li> 
+                <li><a href="#message">Message #4</a></li> 
+            </ul> 
+        </div>
+        
+        <!-- next panel -->
+        <div class="panel" title="Call" id="call"  data-footer="none">
+            <p>This is call page.</p>
+        </div>
+        
+        <div class="panel" title="Message" id="message"  data-footer="none">
+            <p>This is message page.</p>
+        </div>        
+        
+    </div>
+
+</div>
+</body>
+</html>    
