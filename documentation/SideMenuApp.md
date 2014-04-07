@@ -4,6 +4,7 @@ SideMenu App
 - [Left-Side Menu Template](#left-side-menu-template)
 - [Right-Side Menu Template](#right-side-menu-template)
 - [Both-Side Menu Template](#both-side-menu-template)
+- [Side Menu with header](#side-menu-with-header)
 
 
 This template can be used for simple app with side menu that can be opened to switch views, this template can be used for creating applications similar to __Youtube app__ or __Gmail app__. This template can also be used for chat app with right side menu that can be opened to select items, this template can be used for creating applications similar to __Facebook Chat app__.
@@ -86,6 +87,32 @@ The left and right side menu can be created by adding `<nav></nav>` and `<aside>
 The left and right side menu can be toggled by using the methods `$.ui.toggleLeftSideMenu()` and `$.ui.toggleRightSideMenu()`
 
 The left and right side menu width can be set by using the methods `$.ui.setLeftSideMenuWidth(WIDTH);` and `$.ui.setRightSideMenuWidth(WIDTH);`
+
+Side Menu with header
+-
+A header similar to the header in main pages can be created in Side Menu by setting `title` attribute. This will created a header in side menu and add the value of `title` attribute as the title:
+```
+      <nav title="SideMenu">
+            ...
+      </nav>
+      
+      <aside title="Right">
+            ...
+      </aside>
+```
+![screen shot 2014-04-07 at 2 45 40 pm](https://cloud.githubusercontent.com/assets/1414842/2637507/2527feb8-be9e-11e3-9160-96744b0afdb7.png)
+
+If you want to create the Side Menu header with custom buttons, then you can create a header manually like this:
+```
+      <nav title="SideMenu">
+            <header class="header">
+                  <h1>SideMenu</h1>
+                  <a class="button icon settings"></a>
+            </header>
+      </nav>
+```
+![screen shot 2014-04-07 at 2 45 55 pm](https://cloud.githubusercontent.com/assets/1414842/2637511/297bc152-be9e-11e3-9f16-b06bb025b02f.png)
+
 
 Documentation
 -
