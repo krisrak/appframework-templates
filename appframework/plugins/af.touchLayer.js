@@ -42,11 +42,6 @@
     var skipTouchEnd = false; //Fix iOS bug with alerts/confirms
     var cancelClick = false;
 
-    function getTime() {
-        var d = new Date();
-        var n = d.getTime();
-        return n;
-    }
     var touchLayer = function(el) {
         this.clearTouchVars();
         el.addEventListener("touchstart", this, false);
@@ -235,7 +230,7 @@
             } else
                 return numOnly(document.documentElement.style.height); //TODO: works well on iPhone, test BB
         },
-        onOrientationChange: function(e) {
+        onOrientationChange: function() {
             //this.log("orientationchange");
             //if a resize already happened, fire the orientationchange
             var self=this;
@@ -255,7 +250,7 @@
                 }, time);
             }
         },
-        onResize: function(e) {
+        onResize: function() {
             //avoid infinite loop on iPhone
             if (this.ignoreNextResize_) {
                 //this.log("ignored resize");
@@ -384,7 +379,7 @@
         },
 
         onTouchStart: function(e) {
-            //setup initial touch position
+            //setup initial touch position            
             this.dX = e.touches[0].pageX;
             this.dY = e.touches[0].pageY;
             this.lastTimestamp = e.timeStamp;
@@ -401,7 +396,6 @@
                 skipTouchEnd = e.touches[0].identifier;
                 cancelClick = false;
             }
-
             if (this.scrollerIsScrolling) {
                 this.moved = true;
                 this.scrollerIsScrolling = false;
@@ -450,7 +444,10 @@
                 this.requiresNativeTap = true;
             }
 
+            //do not prevent default on chrome.  Chrome >=33 has issues with this
+            if($.os.chrome||$.os.fennec) return;
             //prevent default if possible
+
             if (!this.isPanning_ && !this.requiresNativeTap) {
                 if ((this.isScrolling && !$.feat.nativeTouchScroll) || (!this.isScrolling))
                     e.preventDefault();
