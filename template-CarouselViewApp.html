@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carosuel App template</title>
+<!--
+    This template can be used for simple app with carousel slider, for creating applications similar to news app.
+-->  
+    
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    <!--AppFramework plugin for carousel -->
+    <script type="text/javascript" charset="utf-8" src="appframework/plugins/af.carousel.js"></script>
+
+<!-- Required if packaging to native app using Intel XDK -->    
+    <script src="intelxdk.js"></script>
+    <script src="xhr.js"></script>
+    <script>    
+        function onDeviceReady(){ 
+            $.ui.launch();
+            intel.xdk.device.hideSplashScreen();
+        }
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+    </script>
+<!-- end Intel XDK code -->
+    
+    <script>
+
+$.ui.autoLaunch = false;
+$.ui.animateHeaders = false;       
+
+$(document).ready(function(){
+    $.ui.launch();
+});
+
+$.ui.ready(function(){
+    carouselSetup();
+});        
+        
+function carouselSetup(){
+    // set size of carousel
+    $("#carousel").width($("#carousel").closest(".panel").width());
+    $("#carousel").height($("#carousel").closest(".panel").height()-25);
+
+    var options={
+       vertical:false, // page up/down
+       horizontal:true, // page left/right
+       pagingDiv:"carousel_dots", // div to hold the dots for paging
+       pagingCssName:"carousel_paging", //classname for the paging dots
+       pagingCssNameSelected: "carousel_paging_selected", //classname for the selected page dots
+       wrap:true //Creates a continuous carousel
+    }
+    var carousel = $("#carousel").carousel(options);
+}
+
+    </script>
+    <style>
+        #carousel {
+            overflow:hidden;
+            margin:0 -10px;
+        }
+        
+        .carousel_page {
+            overflow: auto; 
+            -webkit-scrolling:touch;
+            padding:0 10px;
+        }
+
+        #carousel_dots {
+            text-align: center; 
+            margin-left: auto; 
+            margin-right: auto; 
+            clear: both;
+            position:relative;
+            top:0;
+            z-index:200;
+        }
+        
+        .carousel_paging {
+			border-radius: 10px;
+			background: #ccc;
+			width: 10px;
+			height: 10px;
+			display:inline-block;
+		}
+
+		.carousel_paging_selected {
+			border-radius: 10px;
+			background: #000;
+			width: 10px;
+			height: 10px;
+			display:inline-block;
+		}
+        
+        #carousel h2 {
+            text-align: center;
+        }
+    </style>    
+</head>
+<body> 
+<div id="afui">
+
+    <div id="content"> 
+        
+    <!--Main Pages-->
+        <div class="panel" title="Home" id="home" data-footer="none" selected="true" style="overflow:hidden">
+            <div id="carousel">
+                <div class="carousel_page">
+                    <h2>Page One</h2>
+                    <p>Text and images for Page One goes here. Swipe to go to the next page.</p>
+                </div>
+                <div class="carousel_page">
+                    <h2>Page Two</h2>
+                    <p>Text and images for Page Two goes here. Swipe to go to the next page.</p>
+                </div>
+                <div class="carousel_page">
+                    <h2>Page Three</h2>
+                    <p>Text and images for Page Three goes here. Swipe to go to the next page.</p>
+                </div>
+                <div class="carousel_page">
+                    <h2>Page Four</h2>
+                    <p>Text and images for Page Four goes here. Swipe to go to the next page.</p>
+                </div>
+            </div> 
+            <div id="carousel_dots"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>    
