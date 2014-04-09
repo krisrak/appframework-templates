@@ -16,6 +16,7 @@ __Below are 8 basic templates to get you started with your mobile app:__
 - [GridView App](#gridview-app)
 - [SideMenu App](#sidemenu-app)
 - [TabView App](#tabview-app)
+- [CarouselView App](#carouselview-app)
 - [LoginView App](#loginview-app)
 
 These template demos are meant for mobile devices, check the demos on phone/tablet or resize the browser on computer to view, you can also use Intel XDK tool to import these template and view on different phone and tablet simulators.
@@ -34,6 +35,7 @@ Try out these template demos on actual touch phone or tablet devices:
 | [Grid View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-GridViewApp.html)   | | | |
 | [Side Menu App - left](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-left.html) | [Side Menu App - right](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-right.html) | [Side Menu App - left & right](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-SideMenuApp-both.html) |
 | [Tab View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp.html)    | [Tab View App - bottom button tabs](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp-bottomButtonTabs.html) | [Tab View App - top button tabs](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-TabViewApp-topButtonTabs.html) | |
+| [Carousel View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-CarouselViewApp.html)   | | | |
 | [Login View App](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-LoginViewApp.html)  | | | |
 
 _Feel free to send pull-requests for any bugs or enhancements for these templates_
@@ -95,6 +97,14 @@ This template can be used for simple tab view application that has tabs at the b
 ![TabViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/TabViewApp.png)
 
 _(UI theme - Same code on Android vs Windows Phone)_
+
+CarouselView App
+-
+This template can be used for simple tab view application that has a carousel in the main view to swipe, this template can be used for creating applications similar to __News app__ or __Stock app__.
+
+&rarr; [__Demo__](http://htmlpreview.github.io/?https://raw.github.com/krisrak/appframework-templates/master/template-CarouselViewApp.html) &rarr; [Code](https://github.com/krisrak/appframework-templates/blob/master/template-CarouselViewApp.html)
+
+![CarouselViewApp](https://raw.github.com/krisrak/appframework-templates/master/screenshots/CarouselViewApp.png)
 
 LoginView App
 -
